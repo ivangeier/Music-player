@@ -15,17 +15,20 @@
         <audio id="music" controls>
             <source src="./music/royal_blood_trouble_s_coming_official_video_-9083338381852312934.mp3">
         </audio>
+        <input type="range" id="timerBar" value="0" min="0">
         <div class="controls">
-            <div class="circle">
+            <div class="circle" onclick="backward()">
                 <i class="fas fa-backward"></i>
             </div>
-            <div class="circle">
-                <i class="fas fa-play"></i>
+            <div class="circle" onclick="music.play()">
+                <i id="btn" class="fas fa-play"></i>
             </div>
-            <div class="circle">
+            <div class="circle" onclick="forward()">
                <i class="fas fa-forward"></i>
             </div>
         </div>
     </div>
+
+    <script src="./musicPlayer.js"></script>
 </body>
 </html>
