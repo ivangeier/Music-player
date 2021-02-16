@@ -7,6 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="CSS/all.min.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
     
@@ -19,7 +21,6 @@
         <div class="wrapper-content">
 
             <div class="circle-photo">
-                <!-- <img src="./RoyalBlood.jpg" alt=""> -->
             </div>
 
             <div class="text">
@@ -29,17 +30,17 @@
 
             <div class="rangerBar">
                 <span id="time">00:00:00</span><br>
-                <input type="range" id="timerBar" value="0" min="0">
+                <input type="range" class="timer" id="timerBar" value="0" min="0">
             </div>
 
             <div class="controls">
-                <i class="fas fa-backward"></i>
+                <i class="fas fa-backward" onclick="backward()"></i>
                 
                 <div class="circle-btn" onclick="music.play()">
                     <i id="btn" class="fas fa-play"></i>
                 </div>
     
-                 <i class="fas fa-forward"></i>
+                 <i class="fas fa-forward" onclick="forward()"></i>
             </div>
 
             <div class="controls-two">
@@ -50,6 +51,7 @@
         </div>
     </div>
 
+    <p class="link">desevolvido por: <a>Vinicius Jesus</a></p>
     <script src="./musicPlayer.js"></script>
 </body>
 </html>
