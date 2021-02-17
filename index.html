@@ -29,15 +29,19 @@
             </div>
 
             <div class="rangerBar">
-                <span id="time">00:00:00</span><br>
+                <span id="timerDisplay">00:00:00</span><br>
                 <input type="range" class="timer" id="timerBar" value="0" min="0">
             </div>
 
             <div class="controls">
                 <i class="fas fa-backward" onclick="backward()"></i>
                 
-                <div class="circle-btn" onclick="music.play()">
-                    <i id="btn" class="fas fa-play"></i>
+                <div id="start" class="circle-btn" onclick="play()">
+                    <i id="start-btn" class="fas fa-play"></i>
+                </div>
+
+                <div id="stop" class="circle-btn" onclick="pause()">
+                    <i id="stop-btn" class="fas fa-pause"></i>
                 </div>
     
                  <i class="fas fa-forward" onclick="forward()"></i>
@@ -45,8 +49,8 @@
 
             <div class="controls-two">
                 <i class="fas fa-volume-up"></i>
-                <input type="range" id="volume" value="0" min="0" max="1">
-                <i class="fas fa-undo"></i>
+                <input type="range" id="volume" step="0.2" value="1" min="0" max="1" onchange="musicVolume(this.value)">
+                <i class="fas fa-undo" onclick="again()"></i>
             </div>
         </div>
     </div>
