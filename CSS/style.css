@@ -51,36 +51,6 @@ span{
     color: snow;
 }
 
-#timerBar{
-    -webkit-appearance: none;
-    width: 210px;
-    height: 8px;
-    outline: none;
-    border-radius: 10px;
-    background: #121212;
-    box-shadow: inset 4px 4px 4px rgba(139, 133, 133, 0.25);
-}
-
-#timerBar::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%; 
-
-    background: snow;
-    cursor: pointer;
-}
-
-.timerBar::-moz-range-thumb {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-
-    background:snow;
-    cursor: pointer;
-}
-
 .controls{
     display: flex;
     flex-direction: row;
@@ -111,9 +81,14 @@ i{
     font-size: 19px;
 }
 
+.fa-backward:hover, .fa-forward:hover, .fa-undo:hover{
+    color: orangered;
+}
+
 .controls-two{
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .link{
@@ -124,6 +99,7 @@ i{
 .link a{
     color: #ff5e00;
     cursor: pointer;
+    text-decoration: none;
 }
 
 #stop-btn{
@@ -136,3 +112,74 @@ i{
 #stop{
     display: none;
 }
+
+/* Inputs range custom */
+#timerBar{
+    -webkit-appearance: none;
+    width: 210px;
+    height: 12px;
+    outline: none;
+    border-radius: 15px;
+    background: #121212;
+    box-shadow: inset 4px 4px 4px rgba(139, 133, 133, 0.25);
+    overflow: hidden;
+}
+
+#timerBar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; 
+
+    background: snow;
+    cursor: pointer;
+    border: 2px solid snow;
+    box-shadow: -407px 0 0 400px #FF0000;
+    background: linear-gradient(270deg, #FC5B00 0%, #FF0000 100%);;
+}
+
+#timerBar::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background:snow;
+    cursor: pointer;
+}
+
+#volume{
+    -webkit-appearance: none;
+    width: 110px;
+    height: 10px;
+    outline: none;
+    border-radius: 15px;
+    /* background: #121212; */
+    background: #C4C4C4;
+    box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
+    overflow: hidden;
+}
+
+#volume::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+
+    background: snow;
+    cursor: pointer;
+    border: 2px solid snow;
+    box-shadow: -407px 0 0 400px #FF0000;
+    background: linear-gradient(270deg, #FC5B00 0%, #FF0000 100%);
+}
+
+#volume::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    background:snow;
+    cursor: pointer;
+}
+
