@@ -4,6 +4,7 @@
 Criar um aplicativo para reproduzir audio na página web
 
 ## Resultado: 
+![alt text](https://github.com/vinicius-je/Music-player/blob/main/img/apresenta%C3%A7%C3%A3o.png)
 
 ## Tecnologias Utilizadas:
 * HTML
