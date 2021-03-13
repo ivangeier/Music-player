@@ -32,12 +32,13 @@ body{
     height: 190px;
     border-radius: 50%;
     border: 4px solid #2b343b;
-    background-image: url(../img/RoyalBlood.jpg);
+    background-image: url(../img/img.jpg);
     background-size: cover;
+    background-position: center;
     margin: auto;
 }
 
-.text{
+.title{
     text-align: center;
     padding: 20px 0;
     color: snow;
@@ -154,7 +155,6 @@ i{
     height: 10px;
     outline: none;
     border-radius: 15px;
-    /* background: #121212; */
     background: #C4C4C4;
     box-shadow: inset 4px 4px 4px rgba(0, 0, 0, 0.25);
     overflow: hidden;
